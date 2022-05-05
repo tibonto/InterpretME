@@ -165,18 +165,24 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://interpretme.org/vocab/hasSHACLConstraint
 <http://interpretme.org/vocab/hasSHACLConstraint> rdf:type owl:ObjectProperty ;
                                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                                  rdfs:domain :Run ;
-                                                  rdfs:range <http://interpretme.org/vocab/SHACLValidation> ;
+                                                  rdfs:domain <http://interpretme.org/vocab/SHACLValidation> ;
                                                   <http://purl.org/dc/terms/description> "SHACL constraints"@en ;
                                                   rdfs:isDefinedBy "disha_purohit"@en ;
                                                   rdfs:label "hasSHACLConstraint"@en .
 
 
+###  http://interpretme.org/vocab/hasSHACLIC
+<http://interpretme.org/vocab/hasSHACLIC> rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf owl:topObjectProperty ;
+                                          rdfs:domain :Run ;
+                                          rdfs:range <http://interpretme.org/vocab/SHACLValidation> ;
+                                          rdfs:label "hasSHACLIC"@en .
+
+
 ###  http://interpretme.org/vocab/hasSHACLResult
 <http://interpretme.org/vocab/hasSHACLResult> rdf:type owl:ObjectProperty ;
                                               rdfs:subPropertyOf owl:topObjectProperty ;
-                                              rdfs:domain :Run ;
-                                              rdfs:range <http://interpretme.org/vocab/SHACLValidation> ;
+                                              rdfs:domain <http://interpretme.org/vocab/SHACLValidation> ;
                                               <http://purl.org/dc/terms/description> "SHACL result"@en ;
                                               rdfs:isDefinedBy "disha_purohit"@en ;
                                               rdfs:label "hasSHACLResult"@en .
@@ -185,11 +191,17 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://interpretme.org/vocab/hasSHACLSchema
 <http://interpretme.org/vocab/hasSHACLSchema> rdf:type owl:ObjectProperty ;
                                               rdfs:subPropertyOf owl:topObjectProperty ;
-                                              rdfs:domain :Run ;
-                                              rdfs:range <http://interpretme.org/vocab/SHACLValidation> ;
+                                              rdfs:domain <http://interpretme.org/vocab/SHACLValidation> ;
                                               <http://purl.org/dc/terms/description> "SHACL schema"@en ;
                                               rdfs:isDefinedBy "disha_purohit"@en ;
                                               rdfs:label "hasSHACLSchema"@en .
+
+
+###  http://interpretme.org/vocab/hasSHACLShape
+<http://interpretme.org/vocab/hasSHACLShape> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf owl:topObjectProperty ;
+                                             rdfs:domain <http://interpretme.org/vocab/SHACLValidation> ;
+                                             rdfs:label "hasSHACLShape"@en .
 
 
 ###  http://interpretme.org/vocab/hasSampling
@@ -390,16 +402,6 @@ xsd:date rdf:type rdfs:Datatype .
                                       rdfs:range rdfs:Literal .
 
 
-###  http://interpretme.org/vocab/hasSHACLIC
-<http://interpretme.org/vocab/hasSHACLIC> rdf:type owl:DatatypeProperty ;
-                                          rdfs:subPropertyOf owl:topDataProperty ;
-                                          rdfs:domain <http://interpretme.org/vocab/SHACLValidation> ;
-                                          rdfs:range rdfs:Literal ;
-                                          <http://purl.org/dc/terms/description> "SHACL integrity constraints for target entity"@en ;
-                                          rdfs:isDefinedBy "disha_purohit"@en ;
-                                          rdfs:label "hasSHACLIC"@en .
-
-
 ###  http://interpretme.org/vocab/hasSupport
 <http://interpretme.org/vocab/hasSupport> rdf:type owl:DatatypeProperty ;
                                           rdfs:subPropertyOf owl:topDataProperty ;
@@ -510,6 +512,31 @@ xsd:date rdf:type rdfs:Datatype .
 <http://interpretme.org/vocab/TestedTargetEntity> rdf:type owl:Class ;
                                                   rdfs:subClassOf <http://interpretme.org/vocab/TargetEntity> ;
                                                   rdfs:label "TestedTargetEntity"@en .
+
+
+###  http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FEGFRNegativePatientInverted
+<http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FEGFRNegativePatientInverted> rdf:type owl:Class ;
+                                                                                                      rdfs:label "	http://interpretme.org/entity/EGFRNegativePatientInverted"@en .
+
+
+###  http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FFalse
+<http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FFalse> rdf:type owl:Class ;
+                                                                                rdfs:label "	http://interpretme.org/entity/False"@en .
+
+
+###  http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FAgeCategory_YOUNGER%2520%253E%25200.00_-0.3197848474707809_LIME_1651651103437
+<http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FAgeCategory_YOUNGER%2520%253E%25200.00_-0.3197848474707809_LIME_1651651103437> rdf:type owl:Class ;
+                                                                                                                                                        rdfs:label "	http://interpretme.org/entity/AgeCategory_YOUNGER%20%3E%200.00_-0.3197848474707809_LIME_1651651103437"@en .
+
+
+###  http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FFalse%09
+<http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FFalse%09> rdf:type owl:Class ;
+                                                                                   rdfs:label "	http://interpretme.org/entity/False	"@en .
+
+
+###  http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2Fexample%2Fshapes%2Fclarify%2FAfatinib_EGFR_treatmentline_hasDrug
+<http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2Fexample%2Fshapes%2Fclarify%2FAfatinib_EGFR_treatmentline_hasDrug> rdf:type owl:Class ;
+                                                                                                                                           rdfs:label "	http://interpretme.org/entity/example/shapes/clarify/Afatinib_EGFR_treatmentline_hasDrug"@en .
 
 
 ###  http://www.w3.org/ns/mls#Algorithm
@@ -772,6 +799,91 @@ or the number of features of a data set). They may be also informationtheoretic 
 
 
 #################################################################
+#    Individuals
+#################################################################
+
+###  http://interpretme.org/vocab/http%3A%2F%2Fclarify2020.eu%2Fentity%2F1300885
+<http://interpretme.org/vocab/http%3A%2F%2Fclarify2020.eu%2Fentity%2F1300885> rdf:type owl:NamedIndividual ;
+                                                                              owl:sameAs <http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2F1300885_1651651103437> ;
+                                                                              rdfs:label "http://clarify2020.eu/entity/1300885"@en .
+
+
+###  http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2F1300885_1651651103437
+<http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2F1300885_1651651103437> rdf:type owl:NamedIndividual ,
+                                                                                                      <http://interpretme.org/vocab/TestedTargetEntity> ;
+                                                                                             <http://interpretme.org/vocab/hasFeature> <http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2F1300885_AgeCategory_YOUNGER%2520%253E%25200.00_-0.3197848474707809_1651651103437_LIME> ;
+                                                                                             <http://interpretme.org/vocab/hasRun> <http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2F1651651103437> ;
+                                                                                             <http://interpretme.org/vocab/hasSHACLIC> <http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fvocab%2Fhttp%253A%252F%252Finterpretme.org%252Fentity%252F1300885_1651651103437_5c5b60af8ffe7b10c5621fc5e32eeb73> ;
+                                                                                             rdfs:label "http://interpretme.org/entity/1300885_1651651103437"@en .
+
+
+###  http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2F1300885_1651651103437_5c5b60af8ffe7b10c5621fc5e32eeb73
+<http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2F1300885_1651651103437_5c5b60af8ffe7b10c5621fc5e32eeb73> rdf:type owl:NamedIndividual ,
+                                                                                                                                       <http://interpretme.org/vocab/SHACLValidation> ,
+                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                         owl:onProperty <http://interpretme.org/vocab/hasSHACLResult> ;
+                                                                                                                                         owl:someValuesFrom <http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FFalse%09>
+                                                                                                                                       ] ,
+                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                         owl:onProperty <http://interpretme.org/vocab/hasSHACLSchema> ;
+                                                                                                                                         owl:someValuesFrom <http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2Fexample%2Fshapes%2Fclarify%2FAfatinib_EGFR_treatmentline_hasDrug>
+                                                                                                                                       ] ,
+                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                         owl:onProperty <http://interpretme.org/vocab/hasSHACLShape> ;
+                                                                                                                                         owl:someValuesFrom <http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FEGFRNegativePatientInverted>
+                                                                                                                                       ] ;
+                                                                                                                              <http://interpretme.org/vocab/hasSHACLConstraint> <http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2FAfatinib%2520is%2520not%2520recommended%2520for%2520NSLC%2520EGFR%2520negative%2520%2528hasDrug%2529> ;
+                                                                                                                              rdfs:label "http://interpretme.org/entity/1300885_1651651103437_5c5b60af8ffe7b10c5621fc5e32eeb73"@en .
+
+
+###  http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2F1651651103437
+<http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2F1651651103437> rdf:type owl:NamedIndividual ,
+                                                                                              :Run ;
+                                                                                     rdfs:label "http://interpretme.org/entity/1651651103437"@en .
+
+
+###  http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2FLIME
+<http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2FLIME> rdf:type owl:NamedIndividual ;
+                                                                            rdfs:label "http://interpretme.org/entity/LIME"@en .
+
+
+###  http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2F1300885_AgeCategory_YOUNGER%2520%253E%25200.00_-0.3197848474707809_1651651103437_LIME
+<http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2F1300885_AgeCategory_YOUNGER%2520%253E%25200.00_-0.3197848474707809_1651651103437_LIME> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty <http://interpretme.org/vocab/hasFeatureWeight> ;
+                                                                                                                                                                        owl:someValuesFrom <http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FAgeCategory_YOUNGER%2520%253E%25200.00_-0.3197848474707809_LIME_1651651103437>
+                                                                                                                                                                      ] ;
+                                                                                                                                                             <http://interpretme.org/vocab/hasFeature> <http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2FAgeCategory_YOUNGER%2520%253E%25200.00> ;
+                                                                                                                                                             <http://interpretme.org/vocab/hasGeneratedBy> <http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2FLIME> ;
+                                                                                                                                                             rdfs:label "http://interpretme.org/entity/1300885_AgeCategory_YOUNGER%20%3E%200.00_-0.3197848474707809_1651651103437_LIME"@en .
+
+
+###  http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2FAfatinib%2520is%2520not%2520recommended%2520for%2520NSLC%2520EGFR%2520negative%2520%2528hasDrug%2529
+<http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2FAfatinib%2520is%2520not%2520recommended%2520for%2520NSLC%2520EGFR%2520negative%2520%2528hasDrug%2529> rdf:type owl:NamedIndividual ;
+                                                                                                                                                                            rdfs:label "http://interpretme.org/entity/Afatinib%20is%20not%20recommended%20for%20NSLC%20EGFR%20negative%20%28hasDrug%29"@en .
+
+
+###  http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2FAgeCategory_YOUNGER%2520%253E%25200.00
+<http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2FAgeCategory_YOUNGER%2520%253E%25200.00> rdf:type owl:NamedIndividual ;
+                                                                                                              rdfs:label "http://interpretme.org/entity/AgeCategory_YOUNGER%20%3E%200.00"@en .
+
+
+###  http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fvocab%2Fhttp%253A%252F%252Finterpretme.org%252Fentity%252F1300885_1651651103437_5c5b60af8ffe7b10c5621fc5e32eeb73
+<http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fvocab%2Fhttp%253A%252F%252Finterpretme.org%252Fentity%252F1300885_1651651103437_5c5b60af8ffe7b10c5621fc5e32eeb73> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                                                                          owl:onProperty <http://interpretme.org/vocab/hasSHACLResult> ;
+                                                                                                                                                                                          owl:someValuesFrom <http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FFalse>
+                                                                                                                                                                                        ] ,
+                                                                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                                                                          owl:onProperty <http://interpretme.org/vocab/hasSHACLShape> ;
+                                                                                                                                                                                          owl:someValuesFrom <http://interpretme.org/vocab/%09http%3A%2F%2Finterpretme.org%2Fentity%2FEGFRNegativePatientInverted>
+                                                                                                                                                                                        ] ;
+                                                                                                                                                                               <http://interpretme.org/vocab/hasSHACLConstraint> <http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2FAfatinib%2520is%2520not%2520recommended%2520for%2520NSLC%2520EGFR%2520negative%2520%2528hasDrug%2529> ;
+                                                                                                                                                                               <http://interpretme.org/vocab/hasSHACLSchema> <http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2FAfatinib%2520is%2520not%2520recommended%2520for%2520NSLC%2520EGFR%2520negative%2520%2528hasDrug%2529> ;
+                                                                                                                                                                               rdfs:label "http://interpretme.org/vocab/http%3A%2F%2Finterpretme.org%2Fentity%2F1300885_1651651103437_5c5b60af8ffe7b10c5621fc5e32eeb73"@en .
+
+
+#################################################################
 #    Annotations
 #################################################################
 
@@ -788,8 +900,8 @@ or the number of features of a data set). They may be also informationtheoretic 
 <http://purl.org/dc/elements/1.1/contributor> rdfs:label "Contributor"@en ;
                                               <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
                                               <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#contributor-006> ;
-                                              <http://purl.org/dc/terms/description> "Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."@en ;
                                               rdfs:comment "An entity responsible for making contributions to the resource."@en ;
+                                              <http://purl.org/dc/terms/description> "Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."@en ;
                                               <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
                                               <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
                                               rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> .
@@ -798,8 +910,8 @@ or the number of features of a data set). They may be also informationtheoretic 
 <http://purl.org/dc/elements/1.1/coverage> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#coverage-006> ;
                                            rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
                                            <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
-                                           rdfs:comment "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant."@en ;
                                            <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
+                                           rdfs:comment "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant."@en ;
                                            <http://purl.org/dc/terms/description> "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."@en ;
                                            <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
                                            rdfs:label "Coverage"@en .
@@ -808,19 +920,19 @@ or the number of features of a data set). They may be also informationtheoretic 
 <http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
                                           rdfs:label "Creator"@en ;
                                           rdfs:comment "An entity primarily responsible for making the resource."@en ;
-                                          <http://purl.org/dc/terms/description> "Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."@en ;
                                           rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                          <http://purl.org/dc/terms/description> "Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."@en ;
                                           <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#creator-006> ;
                                           <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
                                           <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date .
 
 
-<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
-                                       <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+<http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                       <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
                                        <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
                                        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
-                                       rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource."@en ;
                                        <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#date-006> ;
+                                       rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource."@en ;
                                        rdfs:label "Date"@en ;
                                        <http://purl.org/dc/terms/description> "Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."@en .
 
@@ -840,8 +952,8 @@ or the number of features of a data set). They may be also informationtheoretic 
                                          <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
                                          rdfs:label "Format"@en ;
                                          rdfs:comment "The file format, physical medium, or dimensions of the resource."@en ;
-                                         <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#format-007> ;
                                          rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                         <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#format-007> ;
                                          <http://purl.org/dc/terms/description> "Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."@en .
 
 
@@ -858,8 +970,8 @@ or the number of features of a data set). They may be also informationtheoretic 
 <http://purl.org/dc/elements/1.1/language> <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
                                            <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
                                            <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
-                                           rdfs:label "Language"@en ;
                                            <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#language-007> ;
+                                           rdfs:label "Language"@en ;
                                            <http://purl.org/dc/terms/description> "Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."@en ;
                                            rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
                                            rdfs:comment "A language of the resource."@en ;
@@ -887,10 +999,10 @@ or the number of features of a data set). They may be also informationtheoretic 
 
 
 <http://purl.org/dc/elements/1.1/rights> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#rights-006> ;
-                                         <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
                                          rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
-                                         <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                         <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
                                          <http://purl.org/dc/terms/description> "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en ;
+                                         <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
                                          rdfs:label "Rights"@en ;
                                          <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
                                          rdfs:comment "Information about rights held in and over the resource."@en .
@@ -901,8 +1013,8 @@ or the number of features of a data set). They may be also informationtheoretic 
                                          rdfs:comment "A related resource from which the described resource is derived."@en ;
                                          rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
                                          <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
-                                         <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
                                          <http://purl.org/dc/terms/description> "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en ;
+                                         <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
                                          rdfs:label "Source"@en .
 
 
@@ -925,8 +1037,8 @@ or the number of features of a data set). They may be also informationtheoretic 
                                         rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> .
 
 
-<http://purl.org/dc/elements/1.1/type> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#type-006> ;
-                                       rdfs:comment "The nature or genre of the resource."@en ;
+<http://purl.org/dc/elements/1.1/type> rdfs:comment "The nature or genre of the resource."@en ;
+                                       <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#type-006> ;
                                        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
                                        rdfs:label "Type"@en ;
                                        <http://purl.org/dc/terms/description> "Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."@en ;
@@ -936,3 +1048,4 @@ or the number of features of a data set). They may be also informationtheoretic 
 
 
 ###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
+
